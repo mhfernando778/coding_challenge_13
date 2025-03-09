@@ -35,13 +35,13 @@ addEmployeeCard("Janet Jackson", "Singer");
 
 // Task 3: Converting NodeLists to Arrays for Bulk Updates //
 
-function updateEmployeeCards() {
+function updateEmployeeCards() { // ussing array and query selector
     const employeeCardsNodeList = document.querySelectorAll(".employee-card");
     const employeeCardsArray = Array.from(employeeCardsNodeList);
 
-    employeeCardsArray.forEach(card => {
-        card.style.backgroundColor = "pink"; // Light gray background
+    employeeCardsArray.forEach(card => { // changing the card background to pink
+        card.style.backgroundColor = "pink";
     });
 };
 
-updateEmployeeCards();
+updateEmployeeCards(); // updating the employee card

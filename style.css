@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 20 px;
     padding: 20 px;
+    background-color:beige
 };
 
 .employee-card {
@@ -11,3 +12,11 @@ body {
     border-radius: 5 px;
     display: inline-block;
 };
+
+header {
+    background-color: azure;
+};
+
+footer {
+    background-color: azure;
+}

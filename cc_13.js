@@ -52,5 +52,32 @@ updateEmployeeCards(); // updating the employee card
 employeeContainer.addEventListener("click", (event) => { // creating a new click event
     event.stopPropagation();
     employeeContainer.removeChild.card;
-    console.log("Employee card clicked!"); // logging a message when button is clicked
+    console.log("Employee card removed!"); // logging a message when button is clicked
 });
+
+
+// Task 5 //
+const editButton = document.createElement("input");
+
+editButton.addEventListener("click", (event) => { 
+    const nameInput = document.createElement("input"); // create an input field for employee 
+    nameInput.value = heading.textContent; 
+
+    const positionInput = document.createElement("input"); // create an input field for employee position
+    positionInput.value = paragraph.textContent; 
+
+    const saveButton = document.createElement("button"); // Create save button 
+    saveButton.textContent = "save changes";
+
+    saveButton.addEventListener("click", (event) => { // Adding an event listener to the save button 
+    heading.textContent = nameInput.value; 
+    paragraph.textContent = positionInput.value; 
+    card.removeChild(saveButton) // remove save button 
+    card.removeChild(positionInput) // remove position 
+    card.removeChild(nameInput); // remove name 
+}) 
+
+    card.appendChild(nameInput); // appending name 
+    card.appendChild(positionInput); // appending 
+    card.appendChild(saveButton); // appending the save button 
+})

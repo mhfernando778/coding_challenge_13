@@ -45,3 +45,12 @@ function updateEmployeeCards() { // ussing array and query selector
 };
 
 updateEmployeeCards(); // updating the employee card
+
+
+// Task 4 - Implementing Removal of Employee Cards with Event Bubbling //
+
+employeeContainer.addEventListener("click", (event) => { // creating a new click event
+    event.stopPropagation();
+    employeeContainer.removeChild.card;
+    console.log("Employee card clicked!"); // logging a message when button is clicked
+});

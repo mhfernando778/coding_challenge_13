@@ -31,3 +31,17 @@ function addEmployeeCard(name, position) { // building an employee card
 addEmployeeCard("John Doe", "Teacher");
 addEmployeeCard("Jane Cassidy", "Assistant");
 addEmployeeCard("Janet Jackson", "Singer");
+
+
+// Task 3: Converting NodeLists to Arrays for Bulk Updates //
+
+function updateEmployeeCards() {
+    const employeeCardsNodeList = document.querySelectorAll(".employee-card");
+    const employeeCardsArray = Array.from(employeeCardsNodeList);
+
+    employeeCardsArray.forEach(card => {
+        card.style.backgroundColor = "pink"; // Light gray background
+    });
+};
+
+updateEmployeeCards();
